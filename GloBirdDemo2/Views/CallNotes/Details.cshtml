@@ -1,0 +1,51 @@
+﻿@model GloBirdDemo2.Models.CallNote
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CallNote</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CallNote2.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CallNote2.Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Text)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CallNoteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

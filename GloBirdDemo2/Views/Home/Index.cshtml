@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>GloBird Demo</h1>
+    <p class="lead">This website is made as demo for GloBird Energy.</p>
+    <p><a href="https://www.globirdenergy.com.au/" class="btn btn-primary btn-lg">More Info &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Register</h2>
+        <p>
+            Register as a member of GloBird Energy.
+        </p>
+        <p>@Html.ActionLink("Join Us", "Create", "Customers")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Search</h2>
+        <p>Search members of GloBird Energy.</p>
+        <p>@Html.ActionLink("Find Us", "Search", "Customers")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Make a Call Note</h2>
+        <p>Make a call to one of the members of GloBird Energy.</p>
+        <p>@Html.ActionLink("Call Us", "Create", "CallNotes")</p>
+    </div>
+</div>
